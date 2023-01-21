@@ -58,8 +58,6 @@ button.addEventListener("click", function (event) {
 
 button.addEventListener("click", validate)
 
- 
-
 function validate(e) {
 
     let name = nameInput.value;
@@ -69,15 +67,12 @@ function validate(e) {
     let password = passwordInput.value;
 
     let confirmpassword = confirmpasswordInput.value;
-
  
+
 
     if (name.length >= 2) {
 
         if (ValidateEmail(email)) {
-
- 
-
             if (validatePassword(password)) {
 
                 if (password === confirmpassword) {
@@ -92,7 +87,7 @@ function validate(e) {
 
                         password:password,
 
-                        char:char
+                        // char:char
 
                     })
 
@@ -144,7 +139,7 @@ function redirect(){
 
 function makeid(length) {
 
-    var result           = '';
+    var result = '';
 
     var characters= 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
@@ -163,12 +158,4 @@ makeid(10);
 
 let char=(makeid);
 
-
-
-
-
-
-
-
-
-
+// let arr1 = [{question: “What is a dog” , answer: “Dog is a animal with 4 legs”, imageLink = “dog.jpg”}];
